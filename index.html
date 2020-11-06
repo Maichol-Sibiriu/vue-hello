@@ -3,10 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
 
-   <h1 id="title">{{ title }}</h1>
+    <div id="container">
+      <h1>{{ title }}</h1>
+      <div class="">
+        <img :src="image" alt="">
+        <input
+        type="text"
+        placeholder="inserisci nome personaggio"
+        v-model="name">
+        <p>il tuo personaggio e'... {{ name }}</p>
+      </div>
+    </div>
 
 
    <!-- javascript -->
